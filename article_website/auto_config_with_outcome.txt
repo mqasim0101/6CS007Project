@@ -1,0 +1,62 @@
+<?php
+// Detect color blindness
+require_once 'vendor/autoload.php';
+use ColorBlindnessSimulator\ColorBlindnessSimulator;
+$simulator = new ColorBlindnessSimulator();
+$isProtanopia = $simulator->isProtanopia();
+
+// Define alternative colors
+$alternativeColors = [
+  'primaryColor' => '#FFC080', // Replace with a more distinguishable color for protanopia
+  'secondaryColor' => '#8BC34A', // Replace with a more distinguishable color for protanopia
+];
+
+// Generate CSS with alternative colors
+$css = '';
+foreach ($alternativeColors as $key => $color) {
+  $css .= ".$key { color: $color; }";
+}
+file_put_contents('alternative-colors.css', $css);
+
+// Include CSS with alternative colors in HTML
+echo "<link rel='stylesheet' type='text/css' href='alternative-colors.css'>";
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------
+new code with php
+
+------------------------------------------------------------------------------------------------------------------------------
+<?php
+// Get the result from the AJAX request
+$isProtanopia = $_POST['isProtanopia'];
+
+// Define alternative colors
+$alternativeColors = [
+  'primaryColor' => '#FFC080', // Replace with a more distinguishable color for protanopia
+  'secondaryColor' => '#8BC34A', // Replace with a more distinguishable color for protanopia
+];
+
+// Generate CSS with alternative colors
+$css = '';
+foreach ($alternativeColors as $key => $color) {
+  $css .= ".$key { color: $color; }";
+}
+file_put_contents('alternative-colors.css', $css);
+
+// Include CSS with alternative colors in HTML
+echo "<link rel='stylesheet' type='text/css' href='alternative-colors.css'>";
+?>
+
+------------------------------------------------------------------------------------------------------------------------------
+Javascript code
+-----------------------------------------------------------------------------------------------------------------------------
+$.ajax({
+  type: 'POST',
+  url: 'detect-color-blindness.php',
+  data: {
+    isProtanopia: true // Replace with the actual result from the color blindness detection library
+  },
+  success: function(response) {
+    // Handle the response from the server
+  }
+});

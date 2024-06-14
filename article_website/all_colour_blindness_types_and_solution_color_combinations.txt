@@ -1,0 +1,30 @@
+Protanopia is a form of red-green color blindness where the affected individuals have difficulty distinguishing between shades of red and green. Here are some recommended color combinations that can help individuals with different severities of protanopia:
+Mild Protanopia:
+- #FFA500 (Orange) and #008000 (Green)
+- #FF8C00 (Dark Orange) and #00FF00 (Bright Green)
+- #FFD700 (Gold) and #008B8B (Dark Cyan)
+Moderate Protanopia:
+- #FFC0CB (Pink) and #00FF7F (Spring Green)
+- #FF69B4 (Hot Pink) and #00FA9A (Medium Spring Green)
+- #FF1493 (Deep Pink) and #00FF00 (Bright Green)
+Severe Protanopia:
+- #EE82EE (Violet) and #00FFFF (Cyan)
+- #DA70D6 (Plum) and #00FF7F (Spring Green)
+- #DDA0DD (Plum) and #00FA9A (Medium Spring Green)
+These color combinations are designed to provide maximum contrast and differentiation between colors for individuals with varying degrees of protanopia. The colors used are carefully chosen to avoid shades of red and green that may be difficult to distinguish for those affected by this type of color blindness.
+It's important to note that individual experiences may vary, and it's always recommended to test these color combinations with the intended audience to ensure optimal visibility and accessibility.
+---------------------------------------------------------------------------------------------
+For Deuteranopia, the most common type of color blindness, the following color combinations are considered to be more accessible. These combinations are designed to provide sufficient contrast and color distinction for individuals with mild, moderate, and high severity Deuteranopia.
+Mild Deuteranopia:
+Dark Blue (#000033) and Bright Green (#66FF00)
+Deep Red (#8B0000) and Bright Yellow (#FFFF00)
+
+Moderate Deuteranopia:
+Navy Blue (#000080) and Lime Green (#32CD32)
+Maroon (#800000) and Gold (#FFD700)
+
+High Severity Deuteranopia:
+Blue (#0000FF) and Green (#00FF00)
+Dark Red (#8B0000) and Light Yellow (#FFFFE0)
+These color combinations are based on the Web Content Accessibility Guidelines (WCAG) and the ICT Color Contrast Cheat Sheet. The color codes provided are in the format of HTML color picker codes (Hexadecimal).
+Keep in mind that these combinations are not exhaustive, and other colors may also work well depending on the specific context and design requirements. It's essential to test your design with actual users or color blindness simulation tools to ensure the best possible accessibility.

@@ -1,0 +1,32 @@
+function checkContrast($color1, $color2) {
+  // Convert hex values to RGB
+  $rgb1 = hex2rgb($color1);
+  $rgb2 = hex2rgb($color2);
+  
+  // Calculate relative luminance
+  $lum1 = 0.2126 * pow($rgb1[0] / 255, 2.2) + 0.7152 * pow($rgb1[1] / 255, 2.2) + 0.0722 * pow($rgb1[2] / 255, 2.2);
+  $lum2 = 0.2126 * pow($rgb2[0] / 255, 2.2) + 0.7152 * pow($rgb2[1] / 255, 2.2) + 0.0722 * pow($rgb2[2] / 255, 2.2);
+
+  // Calculate contrast ratio
+  $contrastRatio = max($lum1, $lum2) / min($lum1, $lum2);
+
+  // WCAG 2.1 AA standard requires a contrast ratio of at least 4.5 for small text and 3.0 for large text
+  return $contrastRatio >= 4.5;
+}
+
+function hex2rgb($hex) {
+  $rgb = array();
+  $hex = str_replace("#", "", $hex);
+  if(strlen($hex) == 3) {
+    $rgb[] = hexdec(str_repeat($hex[0], 2));
+    $rgb[] = hexdec(str_repeat($hex[1], 2));
+    $rgb[] = hexdec(str_repeat($hex[2], 2));
+  } else if(strlen($hex) == 6) {
+    $rgb[] = hexdec($hex[0].$hex[1]);
+    $rgb[] = hexdec($hex[2].$hex[3]);
+    $rgb[] = hexdec($hex[4].$hex[5]);
+  } else {
+    return false;
+  }
+  return $rgb;
+}

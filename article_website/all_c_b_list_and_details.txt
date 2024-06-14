@@ -1,0 +1,26 @@
+<?php
+
+$colorBlindness = [
+    "Protanopia" => [
+        "description" => "Protanopia is a type of red-green color blindness that affects the ability to distinguish between red and green. People with protanopia have difficulty distinguishing between colors in the red, orange, and yellow spectrum.",
+        "avoid" => ["red", "orange", "yellow", "brown"],
+        "best_combination" => ["blue", "yellow"]
+    ],
+    "Deuteranopia" => [
+        "description" => "Deuteranopia is the most common type of red-green color blindness. People with deuteranopia have difficulty distinguishing between green and red, as well as between purple and blue.",
+        "avoid" => ["green", "red", "purple", "brown"],
+        "best_combination" => ["blue", "yellow"]
+    ],
+    "Tritanopia" => [
+        "description" => "Tritanopia is a rare type of color blindness that affects the ability to distinguish between blue and yellow. People with tritanopia have difficulty distinguishing between colors in the blue and yellow spectrum.",
+        "avoid" => ["blue", "yellow", "green", "purple"],
+        "best_combination" => ["red", "black"]
+    ],
+    "Achromatopsia" => [
+        "description" => "Achromatopsia is a rare type of color blindness that affects the ability to see color at all. People with achromatopsia see the world in shades of gray.",
+        "avoid" => ["all colors"],
+        "best_combination" => ["high contrast black and white"]
+    ]
+];
+
+?>
